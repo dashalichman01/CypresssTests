@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "cypress:open": "cypress open --config-file=cypress.config.ts",
+    "cypress:run": "cypress run --config-file=cypress.config.ts",
     "start": "npx cypress open",
-    "test": "cypress run",
-    "cypress:open": "cypress open"
+    "test": "cypress run"
   },
   "author": "",
   "license": "ISC",

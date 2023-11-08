@@ -4,12 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "rollup -c",
-    "start": "http-server",
+    "start": "npx cypress open",
     "test": "cypress run",
-    "cypress:open": "cypress open",
-    "cypress:run": "cypress run",
-    "cypress:record": "cypress run --record --key"
+    "cypress:open": "cypress open"
   },
   "author": "",
   "license": "ISC",
@@ -17,6 +14,7 @@
     "@faker-js/faker": "^8.2.0",
     "@types/faker": "^6.6.9",
     "cypress": "^13.4.0",
+    "rollup": "^4.3.0",
     "typescript": "^5.2.2"
   },
   "dependencies": {

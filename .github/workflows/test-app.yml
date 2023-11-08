@@ -12,19 +12,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
+      - name: Cypress.io
+        uses: Cypress-io/github-action@v2
         with:
-          node-version: 14  # You can specify the Node.js version you need
-
-      - name: Install Dependencies
-        run: npm install
-
-      - name: Build
-        run: npm run build
-
-      - name: Start Server
-        run: npm start
-
-      - name: Cypress run
-        run: npx cypress run
+          start: npm start

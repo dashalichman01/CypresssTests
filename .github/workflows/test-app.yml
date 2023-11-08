@@ -1,5 +1,4 @@
 name: Cypress Tests
-run: npx cypress run --config-file cypress.config.ts
 
 on:
   push:

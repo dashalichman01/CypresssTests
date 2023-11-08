@@ -4,16 +4,14 @@ on: [push]
 
 jobs:
   cypress-run:
-    runs-on: ubuntu-22.04
-    container:
-      image: cypress/browsers:node-20.9.0-chrome-118.0.5993.88-1-ff-118.0.2-edge-118.0.2088.46-1
-      options: --user 1001
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v2
+      # Install NPM dependencies, cache them correctly
+      # and run all Cypress tests
       - name: Cypress run
-        uses: cypress-io/github-action@v6
+        uses: cypress-io/github-action@v2
         with:
           build: npm run build
           start: npm start
-          browser: chrome

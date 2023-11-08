@@ -8,6 +8,9 @@ on:
 jobs:
   cypress-run:
     runs-on: ubuntu-latest
+    env:  # Set environment variables
+      EMAIL: ${{ secrets.EMAIL }}
+      PASSWORD: ${{ secrets.PASSWORD }}
     steps:
       - name: Checkout
         uses: actions/checkout@v2

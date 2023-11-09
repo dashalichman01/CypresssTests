@@ -35,5 +35,5 @@ To run Cypress tests, use the following command:
 ### Configuration
 
 -  configuration is stored in cypress.congig.ts, tsconfig.json files.
-- Test scripts are located in the cypress/integration directory.
+- Test scripts are located in the cypress/e2e directory.
 - Environment variables are stored in .env file.

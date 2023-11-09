@@ -20,7 +20,7 @@ Make sure you have the following installed on your machine:
 
 2. Navigate to the project directory:
 
-  `cd cypress-tests`
+   `cd cypress-tests`
 
 3. Install dependencies:
 
@@ -30,7 +30,7 @@ Make sure you have the following installed on your machine:
 
 To run Cypress tests, use the following command:
 
-`npx cypress open`
+   `npx cypress open`
 
 ### Configuration
 Cypress configuration is stored in cypress.congig.ts, tsconfig.json files.
